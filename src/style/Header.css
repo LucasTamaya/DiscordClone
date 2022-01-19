@@ -39,8 +39,7 @@ ul li{
 .menu{
     position: absolute;
     top: 0;
-    right: 0;
-}
+    right: 0;}
 
 .menu.disable{
     display: none;
@@ -68,6 +67,13 @@ nav i{
     height: 80px;
 }
 
+.login-btn{
+    background-color: white;
+    color: #23272a;
+    padding: 10px 15px;
+    border-radius: 25px;
+}
+
 .discord-logo-nav{
     display: flex;
     column-gap: 10px;
@@ -92,4 +98,33 @@ nav i{
     border-radius: 25px;
     color: #f6f6f6;
     background-color: #404eed;
+}
+
+/* Laptop screen */
+@media screen and (min-width: 1224px) {
+    header{
+        padding: 20px 80px;
+    }
+
+    #open-menu{
+        display: none;
+    }
+
+    .menu, .menu.disable{
+        all: unset;
+    }
+
+    nav{
+        all: unset;
+    }
+
+    .navigation{
+        all: unset;
+        display: flex;
+        column-gap: 30px;
+    }
+
+    .nav-top{
+        display: none;
+    }
 }

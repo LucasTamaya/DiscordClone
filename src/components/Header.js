@@ -1,19 +1,15 @@
-import { useEffect, useState } from "react"
+// import { useEffect, useState } from "react"
 import "../style/Header.css"
 
 const Header = () => {
 
-    const [toggleMenu, setToggleMenu] = useState(false);
-
     const openMenu = () => {
-        setToggleMenu(!toggleMenu);
+        document.querySelector(".menu").classList.toggle("disable");
     };
 
     const closeMenu = () => {
-        setToggleMenu(!toggleMenu);
+        document.querySelector(".menu").classList.toggle("disable");
     };
-
-    console.log(toggleMenu)
 
     return (
 
@@ -24,14 +20,7 @@ const Header = () => {
                     <p>Discord</p>
                 </div>
 
-                <div className="mobile-banner-right">
-                    <p>Login</p>
-                    <i className="fas fa-bars" onClick={openMenu}></i>
-                </div>
-            </div>
-
-            {toggleMenu && (
-                <div className="menu" >
+                <div className="menu disable" >
                     <nav>
                         <div className="nav-top">
                             <div className="discord-logo-nav">
@@ -50,7 +39,12 @@ const Header = () => {
                         </ul>
                     </nav>
                 </div>
-            )}
+
+                <div className="mobile-banner-right">
+                    <p class="login-btn">Login</p>
+                    <i className="fas fa-bars" id="open-menu" onClick={openMenu}></i>
+                </div>
+            </div>
 
         </header>
 
