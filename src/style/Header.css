@@ -37,9 +37,9 @@ ul li{
 
 /* Menu */
 .menu{
-position: absolute;
-top: 0;
-right: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .menu.disable{
@@ -47,19 +47,30 @@ right: 0;
 }
 
 nav{
-    height: 100vh;
+    height: 70vh;
     width: 250px;
     border-radius: 25px 0 0 25px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
 }
 
 nav i{
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 30px;
     font-size: 25px;
     cursor: pointer;
+}
+
+.nav-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.discord-logo-nav{
+    display: flex;
+    column-gap: 10px;
 }
 
 .navigation{
@@ -74,4 +85,11 @@ nav i{
 .navigation li{
     font-family: 'Roboto', sans-serif;
     cursor: pointer;
+    transition: 0.2s ease;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 25px;
+    color: #f6f6f6;
+    background-color: #404eed;
 }

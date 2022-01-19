@@ -33,12 +33,18 @@ const Header = () => {
             {toggleMenu && (
                 <div className="menu" >
                     <nav>
-                        <i className="fas fa-times" onClick={closeMenu}></i>
+                        <div className="nav-top">
+                            <div className="discord-logo-nav">
+                                <span className="iconify" data-icon="simple-icons:discord"></span>
+                                <p>Discord</p>
+                            </div>
+                            <i className="fas fa-times" onClick={closeMenu}></i>
+                        </div>
                         <ul className="navigation">
                             <li>Download</li>
                             <li>Nitro</li>
                             <li>Safety</li>
-                            <li>support</li>
+                            <li>Support</li>
                             <li>Blog</li>
                             <li>Careers</li>
                         </ul>
