@@ -1,0 +1,74 @@
+.login-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #2f3136;
+    padding: 80px 20px;
+}
+
+.discord-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.login-text{
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.login-text h2{
+    color: white;
+    font-size: 2.3rem;
+    margin-bottom: 5px;
+}
+
+.login-text p{
+    color: #8e9297;
+}
+
+label, input{
+    display: block;
+}
+
+label{
+    color: #8e9297;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+input{
+    width: 100%;
+    height: 35px;
+    border: 2px solid #23272a;
+    outline: none;
+    background-color: #292b2f;
+    color: white;
+    font-size: 1.6rem;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+form p{
+    color: #00aff4;
+    cursor: pointer;
+    margin-bottom: 35px;
+}
+
+form p span{
+    color: #72767d;
+    margin-right: 5px;
+}   
+
+.login-btn{
+    width: 100%;
+    padding: 15px;
+    background-color: #5865f2;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}

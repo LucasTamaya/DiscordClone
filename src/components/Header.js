@@ -1,4 +1,5 @@
 // import { useEffect, useState } from "react"
+import {Link} from "react-router-dom"
 import "../style/Header.css"
 
 const Header = () => {
@@ -41,7 +42,7 @@ const Header = () => {
                 </div>
 
                 <div className="mobile-banner-right">
-                    <p class="login-btn">Login</p>
+                    <Link class="to-login-page" to="/login">Login</Link>
                     <i className="fas fa-bars" id="open-menu" onClick={openMenu}></i>
                 </div>
             </div>
