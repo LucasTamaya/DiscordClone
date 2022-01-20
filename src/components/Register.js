@@ -7,7 +7,7 @@ const Register = () => {
 
         <main className="login-bg">
 
-            <div className="login-container">
+            <div className="register-container">
                 <Link to="/" className="discord-logo">
                     <span className="iconify" data-icon="simple-icons:discord"></span>
                     <p>Discord</p>

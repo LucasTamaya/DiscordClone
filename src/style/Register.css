@@ -1,3 +1,10 @@
+.register-container{
+    width: 100%;
+    height: 100%;
+    background-color: #2f3136;
+    padding: 80px 20px;
+}
+
 .register-text{
     margin-top: 80px;
     margin-bottom: 20px;}
@@ -11,4 +18,20 @@
 form a {
     color: #00aff4;
     cursor: pointer;
+}
+
+
+/* Laptop screen */
+@media screen and (min-width: 1224px) {
+    .register-container{
+        width: 550px;
+        height: fit-content;
+        padding: 30px;
+        border-radius: 5px;
+    }
+
+    .register-text{
+        margin-top: 0;
+    }
+
 }
