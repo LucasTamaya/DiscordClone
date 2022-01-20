@@ -10,20 +10,21 @@ header {
   overflow: hidden;
 }
 
-header h1{
-    text-align: center;
-    color: white;
-    margin-top: 80px;
-    margin-bottom: 50px;
+header h1 {
+  text-align: center;
+  color: white;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  line-height: 45px;
 }
 
-.header-text{
-    text-align: center;
-    line-height: 25px;
-    color: white;
-    margin: 0 auto;
-    max-width: 550px;
-    margin-bottom: 50px;
+.header-text {
+  text-align: center;
+  line-height: 25px;
+  color: white;
+  margin: 0 auto;
+  max-width: 550px;
+  margin-bottom: 50px;
 }
 
 .discord-btn-container {
@@ -40,24 +41,25 @@ header h1{
   align-items: center;
   column-gap: 10px;
   width: 100%;
+  max-width: 550px;
   border-radius: 25px;
   cursor: pointer;
   background-color: white;
   color: #23272a;
-  padding: 10px 0;
   font-size: 1rem;
   border: none;
+  height: 35px;
 }
 
 button img {
   width: 15px;
   height: 15px;
+  line-height: 0;
 }
 
 .discord-btn.open-browser {
   background-color: #23272a;
   color: white;
-  padding: 15px;
 }
 
 /* Laptop screen */
@@ -67,5 +69,18 @@ button img {
     padding: 20px 80px;
   }
 
-  
+  .discord-btn-container {
+    flex-direction: row;
+    column-gap: 20px;
+  }
+
+  .discord-btn{
+    height: 45px;
+    font-size: 1.5rem;
+  }
+
+  button img{
+      width: 25px;
+      height: 25px;
+  }
 }
