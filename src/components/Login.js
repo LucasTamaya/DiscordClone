@@ -28,10 +28,10 @@ const Login = () => {
                             <input type="text" />
                         </div>
 
-                        <p>Forgot your password?</p>
+                        <p><span>Forgot your password?</span></p>
 
                         <button type="submit" className="login-btn">Login</button>
-                        <p><span>Need an account?</span> Register</p>
+                        <p>Need an account? <Link to="/register">Register</Link></p>
                     </form>
                 </div>
 

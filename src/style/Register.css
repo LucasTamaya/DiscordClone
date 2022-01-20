@@ -1,0 +1,14 @@
+.register-text{
+    margin-top: 80px;
+    margin-bottom: 20px;}
+
+.register-text h3{
+    text-align: center;
+    color: white;
+    font-size: 2.3rem;
+}
+
+form a {
+    color: #00aff4;
+    cursor: pointer;
+}
