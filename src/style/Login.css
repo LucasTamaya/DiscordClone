@@ -1,6 +1,11 @@
-.login-container{
+.login-bg{
     width: 100vw;
     height: 100vh;
+}
+
+.login-container{
+    width: 100%;
+    height: 100%;
     background-color: #2f3136;
     padding: 80px 20px;
 }
@@ -20,7 +25,7 @@
     margin-bottom: 20px;
 }
 
-.login-text h2{
+.login-text h3{
     color: white;
     font-size: 2.3rem;
     margin-bottom: 5px;
@@ -49,13 +54,19 @@ input{
     color: white;
     font-size: 1.6rem;
     padding: 10px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
 }
 
 form p{
     color: #00aff4;
     cursor: pointer;
-    margin-bottom: 35px;
+    /* margin-bottom: 35px; */
 }
 
 form p span{
@@ -70,5 +81,74 @@ form p span{
     border: none;
     color: white;
     font-size: 1.8rem;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+}
+
+
+@media screen and (min-width: 1224px) {
+    .login-bg{
+        background-image: url("../assets/login_bg.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .login-container{
+        width: 650px;
+        height: fit-content;
+        padding: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border-radius: 5px;
+        column-gap: 10px;
+    }
+
+    .discord-logo{
+        display: none;
+    }
+
+    .login-text{
+        margin-top: 0;
+    }
+
+    form p{
+        margin-bottom: 0;
+    }
+
+    .login-laptop-right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 20px;
+    }
+
+    .qr-code{
+        width: 150px;
+        height: 150px;
+        background-image: url("../assets//qr_code.png");
+        background-size: cover;
+        border: 8px solid white;
+        border-radius: 5px;
+    }
+
+    .login-laptop-right h2{
+        font-size: 2.8rem;
+        font-weight: 400;
+        color: white;
+    }
+
+    .login-laptop-right p{
+        color: #8e9297;
+        text-align: center;
+        line-height: 25px;
+    }
+
+    .login-laptop-right p span{
+        color: #b9bbbe;
+        font-weight: 500;
+    }
 }
