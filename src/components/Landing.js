@@ -48,8 +48,7 @@ const Landing = () => {
         </div>
 
         <div className="landing-item last">
-          <img src={justChilling} alt="" />
-          <div className="landing-text">
+          <div className="landing-text last">
             <h2>RELIABLE TECH FOR STAYING CLOSE</h2>
             <p>
               Low latency voice and video feels like you're in the same room.
@@ -57,6 +56,7 @@ const Landing = () => {
               up and have a drawing session with screen share.
             </p>
           </div>
+          <img src={justChilling} alt="" />
           <div className="landing-start-journey">
             <h2>Ready to start your journey?</h2>
             <button className="landing-btn">

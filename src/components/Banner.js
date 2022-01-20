@@ -40,7 +40,7 @@ const Banner = () => {
       </div>
 
       <div className="mobile-banner-right">
-        <Link class="to-login-page" to="/login">
+        <Link className="to-login-page" to="/login">
           Login
         </Link>
         <i className="fas fa-bars" id="open-menu" onClick={openMenu}></i>
