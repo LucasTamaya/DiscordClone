@@ -1,50 +1,23 @@
-// import { useEffect, useState } from "react"
-import {Link} from "react-router-dom"
 import "../style/Header.css"
+import Banner from "./Banner"
+// import image from "../assets/"
 
 const Header = () => {
-
-    const openMenu = () => {
-        document.querySelector(".menu").classList.toggle("disable");
-    };
-
-    const closeMenu = () => {
-        document.querySelector(".menu").classList.toggle("disable");
-    };
 
     return (
 
         <header>
-            <div className="banner" >
-                <div className="mobile-banner-left">
-                    <span className="iconify" data-icon="simple-icons:discord"></span>
-                    <p>Discord</p>
-                </div>
+            <Banner />
+            
+            <h1>IMAGINE A PLACE...</h1>
 
-                <div className="menu disable" >
-                    <nav>
-                        <div className="nav-top">
-                            <div className="discord-logo-nav">
-                                <span className="iconify" data-icon="simple-icons:discord"></span>
-                                <p>Discord</p>
-                            </div>
-                            <i className="fas fa-times" onClick={closeMenu}></i>
-                        </div>
-                        <ul className="navigation">
-                            <li>Download</li>
-                            <li>Nitro</li>
-                            <li>Safety</li>
-                            <li>Support</li>
-                            <li>Blog</li>
-                            <li>Careers</li>
-                        </ul>
-                    </nav>
-                </div>
+            <p>...where you can belong to a school club, a gaming group, or a worldwide art community.
+                Where just you and a handful of friends can spend time together. A place that makes it
+                east to talk every day and hang out more often.
+            </p>
 
-                <div className="mobile-banner-right">
-                    <Link class="to-login-page" to="/login">Login</Link>
-                    <i className="fas fa-bars" id="open-menu" onClick={openMenu}></i>
-                </div>
+            <div className="image">
+
             </div>
 
         </header>

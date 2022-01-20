@@ -3,6 +3,11 @@ header{
     height: 100vh;
     background-color: #404eed;
     padding: 20px;
+    z-index: 1;
+    background-image: url("../assets/center_bg_landing_header.svg");
+    background-size: cover;
+    background-position: 90%;
+    overflow: hidden;
 }
 
 ul li{
@@ -99,6 +104,22 @@ nav i{
     color: #f6f6f6;
     background-color: #404eed;
 }
+
+.image{
+    width: 200px;
+    height: 200px;
+    /* background-color: blue; */
+    background-image: url("../assets/close_icon.svg");
+    background-size: contain;
+}
+
+
+
+
+
+
+
+
 
 /* Laptop screen */
 @media screen and (min-width: 1224px) {
