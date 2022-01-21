@@ -1,22 +1,26 @@
-.dashboard-nav{
-    background-color: #202225;
+.dashboard-container{
+    width: 100vw;
     height: 100vh;
-    width: fit-content;
-    padding: 10px;
+    display: flex;
 }
 
-.dashboard-nav-container{
+.dashboard-icons{
+    background-color: #202225;
+    height: 100%;
+    width: fit-content;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     row-gap: 10px;
 }
 
-.dashboard-nav-container img{
+.dashboard-icons img{
     width: 55px;
     border-radius: 15px;
+    cursor: pointer;
 }
 
-.nav-img-container{
+.dashboard-icons-container{
     width: 55px;
     height: 55px;
     border-radius: 50%;
@@ -24,9 +28,88 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 
-.nav-img-container img{
+.dashboard-icons-container img{
     width: 20px;
+}
+
+.conversation-pannel{
+    width: 100%;
+    height: 100%;
+    background-color: #2f3136;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+.conversation-pannel.disable{
+    display: none;
+}
+
+.conversation-pannel input{
+    background-color: #23272a;
+    margin-bottom: 10px;
+}
+
+.conversation-pannel-item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.conversation-pannel-item.friends{
+    background-color: #4f545cbd;
+}
+
+.conversation-pannel-item img{
+    width: 25px;
+}
+
+.conversation-pannel-item p span{
+    color: white;
+}
+
+.conversation-pannel-item p{
+    color: #8e9297;
+}
+
+.image{
+    width: 100px;
+    height: 100px;
+    background-image: url("../assets/stage_discovery.svg");
+}
+
+.conversation-pannel h4{
+    color: #8e9297;
+    font-size: 1.4rem;
+}
+
+.dm-text-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.dm-text-container img{
+    width: 25px;
+}
+
+.empty-dm-list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/empty_dm_list.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
