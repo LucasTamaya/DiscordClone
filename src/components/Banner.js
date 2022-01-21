@@ -20,7 +20,7 @@ const Banner = () => {
       </div>
 
       <div className="menu disable">
-        <nav>
+        <nav className="landing-nav">
           <div className="nav-top">
             <div className="discord-logo-nav">
               <img src={discordLogoBlack} alt="discord logo" />

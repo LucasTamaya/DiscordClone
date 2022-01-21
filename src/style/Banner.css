@@ -47,7 +47,7 @@ ul li {
   display: none;
 }
 
-nav {
+.landing-nav {
   height: 70vh;
   width: 250px;
   border-radius: 25px 0 0 25px;
@@ -57,7 +57,7 @@ nav {
   padding: 30px;
 }
 
-nav i {
+.landing-nav i {
   font-size: 25px;
   cursor: pointer;
 }

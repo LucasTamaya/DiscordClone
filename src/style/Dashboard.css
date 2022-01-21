@@ -1,0 +1,32 @@
+.dashboard-nav{
+    background-color: #202225;
+    height: 100vh;
+    width: fit-content;
+    padding: 10px;
+}
+
+.dashboard-nav-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.dashboard-nav-container img{
+    width: 55px;
+    border-radius: 15px;
+}
+
+.nav-img-container{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #4f545c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav-img-container img{
+    width: 20px;
+}
