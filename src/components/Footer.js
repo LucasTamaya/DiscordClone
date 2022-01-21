@@ -78,7 +78,7 @@ const Footer = () => {
           <Link to="/">Discord</Link>
         </div>
         <div className="footer-sign-up">
-            <button>Sign up</button>
+            <button><Link to="/login">Sign up</Link></button>
         </div>
       </div>
     </footer>

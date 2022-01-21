@@ -68,7 +68,7 @@
 
 
 /* Laptop screen */
-@media screen and (min-width: 1124px) {
+@media screen and (min-width: 1224px) {
     .landing-item{
         flex-direction: row;
         column-gap: 60px;

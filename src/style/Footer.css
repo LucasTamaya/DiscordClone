@@ -9,7 +9,7 @@
 }
 
 .footer-top {
-  width: 200px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,6 +19,7 @@
 
 .footer-top-left {
   /* background-color: green; */
+  /* donner largeur */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,12 +85,12 @@
   margin-top: 40px;
 }
 
-.footer-bottom{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 40px;
+.footer-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
 }
 
 .footer-discord-logo {
@@ -100,19 +101,47 @@
   cursor: pointer;
 }
 
-.footer-discord-logo img{
-    width: 35px;
+.footer-discord-logo img {
+  width: 35px;
 }
 
-.footer-discord-logo a{
-    color: white;
+.footer-discord-logo a,
+.footer-sign-up a {
+  color: white;
 }
 
-.footer-sign-up button{
-    background-color: #5865f2;
-    border: none;
-    padding: 10px 15px;
-    color: white;
-    border-radius: 25px;
-    cursor: pointer;
+.footer-sign-up button {
+  background-color: #5865f2;
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* Laptop screen */
+@media screen and (min-width: 1224px) {
+  .footer-top {
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 80px;
+  }
+
+  .footer-top-left{
+      align-items: flex-start;
+  }
+
+  .footer-top h2 {
+    text-align: left;
+  }
+
+  .footer-top-right {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-top-right p {
+    text-align: left;
+  }
 }
