@@ -6,6 +6,10 @@
   text-decoration: none;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 :root{
   font-size: 10px;
 }

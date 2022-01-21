@@ -5,6 +5,7 @@ import hangingOutEasy from "../assets/hanging_out_easy_landing.svg";
 import fandomLanding from "../assets/fandom_landing.svg";
 import justChilling from "../assets/just_chiling_landing.svg";
 import downloadIconWhite from "../assets/download_icon_white.svg";
+import Footer from "./Footer";
 
 const Landing = () => {
   return (
@@ -66,6 +67,8 @@ const Landing = () => {
           </div>
         </div>
       </main>
+
+      {/* <Footer /> */}
     </div>
   );
 };
