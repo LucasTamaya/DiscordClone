@@ -14,7 +14,9 @@ import noOnlineFriendsIcon from "../assets/no_online_friends.svg";
 const Dashboard = () => {
   const openConversationPannel = () => {
     document.querySelector(".conversation-pannel").classList.toggle("disable");
-    document.querySelector(".dashboard-banner-and-main").classList.toggle("disable");
+    document
+      .querySelector(".dashboard-banner-and-main")
+      .classList.toggle("disable");
   };
 
   return (
@@ -34,6 +36,7 @@ const Dashboard = () => {
         <div
           className="dashboard-icons-container"
           onClick={openConversationPannel}
+          id="three-dots-icon"
         >
           <img src={threeDots} alt="download icon" />
         </div>
@@ -63,7 +66,6 @@ const Dashboard = () => {
       </div>
 
       <div className="dashboard-banner-and-main">
-
         <div className="dashboard-banner">
           <div className="banner-friends-container">
             <img src={friendsIcon} alt="friends icon" />
@@ -76,11 +78,23 @@ const Dashboard = () => {
           <button>Add Friend</button>
         </div>
 
-        <div className="dashboard-main">
-          <img src={noOnlineFriendsIcon} alt="no online friends icon" />
-          <p>No one's around to play with Wumpus.</p>
+        <div className="dashboard-main-container">
+          <div className="dashboard-main-left">
+            <img src={noOnlineFriendsIcon} alt="no online friends icon" />
+            <p>No one's around to play with Wumpus.</p>
+          </div>
+
+          <div className="dashboard-main-right">
+            <h3>Active Now</h3>
+            <p>
+              <span>It's quiet for now...</span>
+            </p>
+            <p>
+              When a friend starts an activity like playing a game or hanging
+              out on voice, we'll show it here!
+            </p>
+          </div>
         </div>
-        
       </div>
 
       {/* <div className="image">
