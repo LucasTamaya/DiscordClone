@@ -9,14 +9,13 @@ import friendsIcon from "../assets/friends.svg";
 import stageDiscoveryIcon from "../assets/stage_discovery.svg";
 import nitroIcon from "../assets/nitro_icon.svg";
 import plusIcon from "../assets/plus_icon.svg";
-import emptyDmList from "../assets/empty_dm_list.svg";
-// import
+import noOnlineFriendsIcon from "../assets/no_online_friends.svg";
 
 const Dashboard = () => {
-
   const openConversationPannel = () => {
     document.querySelector(".conversation-pannel").classList.toggle("disable");
-  }
+    document.querySelector(".dashboard-banner").classList.toggle("disable");
+  };
 
   return (
     <div className="dashboard-container">
@@ -32,8 +31,11 @@ const Dashboard = () => {
         <div className="dashboard-icons-container">
           <img src={downloadIcon} alt="download icon" />
         </div>
-        <div className="dashboard-icons-container" onClick={openConversationPannel}>
-          <img src={threeDots} alt="download icon"/>
+        <div
+          className="dashboard-icons-container"
+          onClick={openConversationPannel}
+        >
+          <img src={threeDots} alt="download icon" />
         </div>
       </div>
 
@@ -58,6 +60,26 @@ const Dashboard = () => {
           <img src={plusIcon} alt="plus icon" />
         </div>
         <div className="empty-dm-list"></div>
+      </div>
+
+      <div className="dashboard-banner-and-main">
+
+        <div className="dashboard-banner">
+          <div className="banner-friends-container">
+            <img src={friendsIcon} alt="friends icon" />
+            <p>Friends</p>
+          </div>
+          <p>Online</p>
+          <p>All</p>
+          <p>Pending</p>
+          <p>Blocked</p>
+          <button>Add Friend</button>
+        </div>
+
+        <div className="dashboard-main">
+          <img src={noOnlineFriendsIcon} alt="no online friends icon" />
+        </div>
+        
       </div>
 
       {/* <div className="image">
