@@ -14,7 +14,7 @@ import noOnlineFriendsIcon from "../assets/no_online_friends.svg";
 const Dashboard = () => {
   const openConversationPannel = () => {
     document.querySelector(".conversation-pannel").classList.toggle("disable");
-    document.querySelector(".dashboard-banner").classList.toggle("disable");
+    document.querySelector(".dashboard-banner-and-main").classList.toggle("disable");
   };
 
   return (
@@ -78,6 +78,7 @@ const Dashboard = () => {
 
         <div className="dashboard-main">
           <img src={noOnlineFriendsIcon} alt="no online friends icon" />
+          <p>No one's around to play with Wumpus.</p>
         </div>
         
       </div>
