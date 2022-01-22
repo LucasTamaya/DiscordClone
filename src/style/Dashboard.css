@@ -139,12 +139,18 @@
   font-size: 1.2rem;
 }
 
-.dashboard-banner button {
+.dashboard-banner .add-friend-btn {
   padding: 5px;
   border-radius: 15px;
   border: none;
   background-color: #3ba55d;
   color: white;
+  transition: 0.2s ease;
+}
+
+.dashboard-banner .add-friend-btn.active {
+    color: #3ba55d;
+    background-color: transparent;
 }
 
 .dashboard-main-container {
