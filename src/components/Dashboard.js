@@ -10,10 +10,8 @@ const Dashboard = () => {
       <DashboardIcons />
       <ConversationPannel />
       <DashboardBannerAndMain />     
-
-      {/* <div className="image">
-
-      </div> */}
+      
+      
     </div>
   );
 };

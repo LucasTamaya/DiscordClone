@@ -8,8 +8,7 @@ const Login = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
-    const handleLogin = (e) => {
-        e.preventDefault();
+    const handleLogin = () => {
         axios.post("http://localhost:3001/login", {
             email: email,
             password: password

@@ -4,7 +4,7 @@ import addFriendIcon from "../../assets/add_friend_icon.svg";
 import { useState } from "react";
 
 const DashboardBannerAndMain = () => {
-    // cette variable me permet de faire afficher sois la section "add friend" sois "no friend"
+  // cette variable me permet de faire afficher sois la section "add friend" sois "no friend"
   const [FriendSection, setFriendSection] = useState(false);
 
   const handleClick = () => {
@@ -23,15 +23,29 @@ const DashboardBannerAndMain = () => {
         <p>All</p>
         <p>Pending</p>
         <p>Blocked</p>
-        <button class="add-friend-btn" onClick={handleClick}>Add Friend</button>
+        <button class="add-friend-btn" onClick={handleClick}>
+          Add Friend
+        </button>
       </div>
 
       <div className="dashboard-main-container">
         {/* si addFriendSection == true, on affiche la section 'add friend' */}
         {FriendSection ? (
-          <div className="dashboard-main-left">
-            <img src={addFriendIcon} alt="no online friends icon" />
-            <p>Wumpus is waiting on friends. You don't have to though!</p>
+          <div className="dashboard-main-left add-friend">
+            <h3>ADD FRIEND</h3>
+            <p>
+              You can add a friend with their Discord Tag. It's cAsE sEnSitIvE!
+            </p>
+            <div className="add-friend-input">
+              <input type="text" placeholder="Enter a Username #0000" />
+              <div className="add-friend-btn-container">
+                <button>Send Friend Request</button>
+              </div>
+            </div>
+            <div className="add-friend-img">
+              <img src={addFriendIcon} alt="no online friends icon" />
+              <p>Wumpus is waiting on friends. You don't have to though!</p>
+            </div>
           </div>
         ) : (
           // sinon on affiche la section "no friend"

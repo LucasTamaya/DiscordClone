@@ -149,8 +149,8 @@
 }
 
 .dashboard-banner .add-friend-btn.active {
-    color: #3ba55d;
-    background-color: transparent;
+  color: #3ba55d;
+  background-color: transparent;
 }
 
 .dashboard-main-container {
@@ -179,32 +179,92 @@
   color: #8e9297;
 }
 
+.dashboard-main-left.add-friend {
+  padding: 20px;
+  justify-content: unset;
+  align-items: unset;
+  row-gap: unset;
+}
+
+.dashboard-main-left.add-friend h3 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.dashboard-main-left.add-friend p {
+  margin-bottom: 20px;
+}
+
+.add-friend-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 40px;
+  height: 100%;
+}
+
+.add-friend-input{
+  display: flex;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.add-friend-input input {
+  margin-bottom: 20px;
+  padding: 5px;
+  height:100%;
+  flex-basis: 70%;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.add-friend-btn-container{
+  height: 100%;
+  background-color: #51555c7e;
+  padding: 7px;
+  width: 100%;
+  flex-basis: 30%;
+  border-radius: 0 5px 5px 0;
+}
+
+.add-friend-input button {
+  padding: 10px;
+  background-color: #404eed;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+
 /* Version mobile, pas la partie droite */
-.dashboard-main-right{
-    display: none;
-    background-color: #36393f;
-    border-left: 1px solid #8e9297;
-    padding:  40px 20px;
+.dashboard-main-right {
+  display: none;
+  background-color: #36393f;
+  border-left: 1px solid #8e9297;
+  padding: 40px 20px;
 }
 
-.dashboard-main-right h3{
-    color: white;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+.dashboard-main-right h3 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
-.dashboard-main-right p span{
-    color: white;
-    font-size: 1.8rem;
-    font-weight: 500;
+.dashboard-main-right p span {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 500;
 }
 
-.dashboard-main-right p{
-    text-align: center;
-    color: #8e9297;
-    margin-bottom: 20px;
+.dashboard-main-right p {
+  text-align: center;
+  color: #8e9297;
+  margin-bottom: 20px;
 }
-
 
 .banner-friends-container {
   display: flex;
@@ -228,13 +288,13 @@
     max-width: 300px;
   }
 
-  #three-dots-icon{
-      display: none;
+  #three-dots-icon {
+    display: none;
   }
 
-  .dashboard-banner{
-      justify-content: flex-start;
-      column-gap: 30px;
+  .dashboard-banner {
+    justify-content: flex-start;
+    column-gap: 30px;
   }
 
   .conversation-pannel.disable {
@@ -245,12 +305,24 @@
     display: flex;
   }
 
+  .dashboard-main-left{
+    padding: 20px;
+  }
+
   .dashboard-main-left img {
     width: 100%;
     max-width: 450px;
   }
 
-  .dashboard-main-right{
-      display: initial;
+  .dashboard-main-right {
+    display: initial;
+  }
+
+  .add-friend-input {
+    display: flex;
+  }
+
+  .add-friend-input button{
+    padding: 0;
   }
 }
