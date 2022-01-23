@@ -9,9 +9,7 @@ const Dashboard = () => {
     <div className="dashboard-container">
       <DashboardIcons />
       <ConversationPannel />
-      <DashboardBannerAndMain />     
-      
-      
+      <DashboardBannerAndMain />           
     </div>
   );
 };

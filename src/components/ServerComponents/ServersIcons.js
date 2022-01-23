@@ -6,12 +6,9 @@ import downloadIcon from "../../assets/download_icon_green.svg";
 import threeDots from "../../assets/three_dot_icon.svg";
 import { Link } from "react-router-dom";
 
-const DashboardIcons = () => {
-  const openConversationPannel = () => {
-    document.querySelector(".conversation-pannel").classList.toggle("disable");
-    document
-      .querySelector(".dashboard-banner-and-main")
-      .classList.toggle("disable");
+const ServersIcons = () => {
+  const openServersPannel = () => {
+    document.querySelector(".servers-container").classList.toggle("disable");
   };
 
   return (
@@ -29,7 +26,7 @@ const DashboardIcons = () => {
       </div>
       <div
         className="dashboard-icons-container"
-        onClick={openConversationPannel}
+        onClick={openServersPannel}
         id="three-dots-icon"
       >
         <img src={threeDots} alt="download icon" />
@@ -38,4 +35,4 @@ const DashboardIcons = () => {
   );
 };
 
-export default DashboardIcons;
+export default ServersIcons;

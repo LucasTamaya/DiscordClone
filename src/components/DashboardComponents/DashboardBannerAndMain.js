@@ -39,7 +39,7 @@ const DashboardBannerAndMain = () => {
             <div className="add-friend-input">
               <input type="text" placeholder="Enter a Username #0000" />
               <div className="add-friend-btn-container">
-                <button>Send Friend Request</button>
+                <button type="submit">Send Friend Request</button>
               </div>
             </div>
             <div className="add-friend-img">
