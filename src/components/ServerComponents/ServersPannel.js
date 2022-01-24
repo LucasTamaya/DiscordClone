@@ -1,20 +1,19 @@
 import closeIcon from "../../assets/close_icon.svg";
 import discordLogo from "../../assets/discord_logo_red.svg";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const ServersPannel = () => {
-
-    const openServersPannel = () => {
-        document.querySelector(".servers-container").classList.toggle("disable");
-        document.querySelector(".no-channels-selected").classList.toggle("disable");
-    }
+  const openServersPannel = () => {
+    document.querySelector(".servers-container").classList.toggle("disable");
+    document.querySelector(".no-channels-selected").classList.toggle("disable");
+  };
 
   return (
     <div className="servers-container">
       <div className="servers">
         <div className="new-line">
           <h3>newLine</h3>
-          <img src={closeIcon} alt="close icon"/>
+          <img src={closeIcon} alt="close icon" />
         </div>
         <div className="text-channels">
           <i className="fas fa-hashtag"></i>
@@ -28,7 +27,9 @@ const ServersPannel = () => {
 
         <div className="text-channels white">
           <i className="fas fa-hashtag"></i>
-          <Link to="/server/algorithms" onClick={openServersPannel}>algorithms</Link>
+          <Link to="/algorithms" onClick={openServersPannel}>
+            algorithms
+          </Link>
         </div>
 
         <div className="text-channels white">
@@ -58,7 +59,6 @@ const ServersPannel = () => {
       </div>
 
       <div className="servers-bottom">
-
         <div className="servers-bottom-left">
           <img src={discordLogo} alt="discord logo" />
           <div>
@@ -74,7 +74,6 @@ const ServersPannel = () => {
           <i className="fas fa-headphones"></i>
           <i className="fas fa-cog"></i>
         </div>
-
       </div>
     </div>
   );

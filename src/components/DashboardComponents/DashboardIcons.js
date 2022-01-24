@@ -16,7 +16,7 @@ const DashboardIcons = () => {
 
   return (
     <div className="dashboard-icons">
-      <img src={discordLogo} alt="discord logo" />
+      <Link to="/"><img src={discordLogo} alt="discord logo" /></Link>
       <Link to="/server"><img src={newLine} alt="new line logo" /></Link>
       <div className="dashboard-icons-container">
         <img src={plus} alt="plus icon" />

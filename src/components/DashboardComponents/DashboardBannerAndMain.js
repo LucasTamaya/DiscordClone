@@ -23,7 +23,7 @@ const DashboardBannerAndMain = () => {
         <p>All</p>
         <p>Pending</p>
         <p>Blocked</p>
-        <button class="add-friend-btn" onClick={handleClick}>
+        <button className="add-friend-btn" onClick={handleClick}>
           Add Friend
         </button>
       </div>

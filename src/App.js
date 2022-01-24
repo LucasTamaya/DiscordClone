@@ -14,7 +14,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/server" element={<Server />}/>
-        <Route path="/server/algorithms" element={<AlgorithmsChannel />}/>
+        <Route path="/algorithms" element={<AlgorithmsChannel />}/>
       </Routes>
   );
 }

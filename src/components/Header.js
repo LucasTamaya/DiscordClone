@@ -1,6 +1,6 @@
 import "../style/Header.css";
 import Banner from "./Banner";
-// import image from "../assets/"
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -21,9 +21,8 @@ const Header = () => {
           <img src="https://img.icons8.com/pastel-glyph/64/000000/download--v1.png" />
           Download for Mac
         </button>
-
         <button className="discord-btn open-browser">
-          Open Discord in your browser
+          <Link to="/dashboard">Open Discord in your browser</Link>
         </button>
       </div>
     </header>
