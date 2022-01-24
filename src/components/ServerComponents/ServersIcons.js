@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 const ServersIcons = () => {
   const openServersPannel = () => {
     document.querySelector(".servers-container").classList.toggle("disable");
+    document.querySelector(".no-channels-selected").classList.toggle("disable");
   };
 
   return (

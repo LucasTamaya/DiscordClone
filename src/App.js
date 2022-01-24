@@ -4,6 +4,7 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 import Dashboard from "./components/Dashboard";
 import Server from "./components/Server";
+import AlgorithmsChannel from "./components/ServerComponents/AlgorithmsChannel";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/server" element={<Server />}/>
+        <Route path="/server/algorithms" element={<AlgorithmsChannel />}/>
       </Routes>
   );
 }
