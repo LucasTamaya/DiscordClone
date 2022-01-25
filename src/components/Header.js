@@ -1,6 +1,8 @@
 import "../style/Header.css";
 import Banner from "./Banner";
 import { Link } from "react-router-dom";
+import landingLeftIcon from "../assets/left_bg_landing_header.svg";
+import landingRightIcon from "../assets/right_bg_landing_header.svg";
 
 const Header = () => {
   return (
@@ -25,6 +27,15 @@ const Header = () => {
           <Link to="/dashboard">Open Discord in your browser</Link>
         </button>
       </div>
+
+      <div className="landing-left-icon">
+        <img src={landingLeftIcon} alt="left bg landing icon" />
+      </div>
+
+      <div className="landing-right-icon">
+        <img src={landingRightIcon} alt="right bg landing icon" />
+      </div>
+      
     </header>
   );
 };

@@ -7,7 +7,7 @@ header {
   background-image: url("../assets/center_bg_landing_header.svg");
   background-size: cover;
   background-position: 90%;
-  /* overflow: hidden; */
+  position: relative; /*a supprimer si beug*/
 }
 
 header h1 {
@@ -61,8 +61,48 @@ button img {
   background-color: #23272a;
 }
 
-.discord-btn.open-browser a{
+.discord-btn.open-browser a {
   color: white;
+}
+
+.landing-left-icon {
+  position: absolute;
+  bottom: 0;
+  left: -10%;
+  z-index: -1;
+  display: none;
+}
+
+.landing-right-icon {
+  position: absolute;
+  bottom: 0;
+  right: -10%;
+  z-index: -1;
+  display: none;
+}
+
+
+/* Tablet screen */
+@media screen and (min-width: 801px) {
+  .landing-left-icon{
+    display: initial;
+  }
+
+  .landing-left-icon > img {
+    width: 40vw;
+    min-width: 350px;
+    max-width: 700px;
+  }
+
+  .landing-right-icon{
+    display: initial;
+  }
+
+  .landing-right-icon > img {
+    width: 40vw;
+    min-width: 350px;
+    max-width: 700px;
+  }
 }
 
 /* Laptop screen */
@@ -77,13 +117,13 @@ button img {
     column-gap: 20px;
   }
 
-  .discord-btn{
+  .discord-btn {
     height: 45px;
     font-size: 1.5rem;
   }
 
-  button img{
-      width: 25px;
-      height: 25px;
+  button img {
+    width: 25px;
+    height: 25px;
   }
 }
