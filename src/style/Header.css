@@ -49,6 +49,11 @@ header h1 {
   font-size: 1rem;
   border: none;
   height: 35px;
+  transition: 0.3s ease;
+}
+
+.discord-btn:hover{
+  transform: scale(1.02);
 }
 
 button img {

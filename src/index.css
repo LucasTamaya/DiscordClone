@@ -21,3 +21,28 @@ p, a, li{
 h1{
   font-size: 3.8rem;
 }
+
+/* Logo discord avec son titre */
+.discord-logo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.discord-logo-container:hover{
+  transform: scale(1.1);
+}
+
+.discord-logo-container > img{
+  width: 35px;
+}
+
+.discord-logo-container > p{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: white;
+}

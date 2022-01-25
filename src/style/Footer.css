@@ -117,6 +117,11 @@
   color: white;
   border-radius: 25px;
   cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.footer-sign-up button:hover{
+  transform: scale(1.05);
 }
 
 /* Laptop screen */

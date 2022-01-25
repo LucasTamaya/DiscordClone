@@ -1,7 +1,7 @@
+import "../style/Banner.css";
 import { Link } from "react-router-dom";
 import discordLogoWhite from "../assets/discord_mini_icon_white.svg";
 import discordLogoBlack from "../assets/discord_mini_icon_black.svg";
-import "../style/Banner.css";
 
 const Banner = () => {
   const openMenu = () => {
@@ -14,10 +14,10 @@ const Banner = () => {
 
   return (
     <div className="banner">
-      <div className="banner-left">
+      <Link className="discord-logo-container" to="/">
         <img src={discordLogoWhite} alt="discord logo" />
-        <Link to="/">Discord</Link>
-      </div>
+        <p>Discord</p>
+      </Link>
 
       <div className="menu disable">
         <nav className="landing-nav">

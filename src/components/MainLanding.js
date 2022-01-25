@@ -58,7 +58,7 @@ const MainLanding = () => {
           <h2>Ready to start your journey?</h2>
           <button className="landing-btn">
             <img src={downloadIconWhite} />
-            Download for Mac
+            <p>Download for Mac</p>
           </button>
         </div>
       </div>

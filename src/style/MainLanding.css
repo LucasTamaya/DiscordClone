@@ -58,6 +58,11 @@
     column-gap: 10px;
     color: white;
     cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.landing-btn:hover{
+    transform: scale(1.05);
 }
 
 .landing-btn img{
@@ -113,10 +118,6 @@
     .landing-btn{
         width: 300px;
     } 
-
-    .landing-btn{
-        font-size: 1.2rem;
-    }
 
     .landing-start-journey .landing-btn img{
         width: 15px;

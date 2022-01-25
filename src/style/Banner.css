@@ -74,6 +74,12 @@ ul li {
   color: #23272a;
   padding: 10px 15px;
   border-radius: 25px;
+  font-weight: 700;
+}
+
+.to-login-page:hover{
+  color: #404eed;
+  transition: 0.3s ease;
 }
 
 .discord-logo-nav {
@@ -139,6 +145,24 @@ ul li {
     all: unset;
     display: flex;
     column-gap: 30px;
+  }
+
+  .navigation > li{
+    position: relative;
+  }
+
+  .navigation > li::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 0;
+    height: 1px; background-color: white;
+    transition: 0.3s ease;
+  }
+
+  .navigation > li:hover::after{
+    width: 100%;
   }
 
   .nav-top {

@@ -73,12 +73,14 @@ const Footer = () => {
       </div>
       <div className="footer-separation"></div>
       <div className="footer-bottom">
-        <div className="footer-discord-logo">
+        <Link className="discord-logo-container" to="/">
           <img src={discordLogoWhite} alt="discord logo" />
-          <Link to="/">Discord</Link>
-        </div>
+          <p>Discord</p>
+        </Link>
         <div className="footer-sign-up">
-            <button><Link to="/login">Sign up</Link></button>
+          <button>
+            <Link to="/login">Sign up</Link>
+          </button>
         </div>
       </div>
     </footer>
