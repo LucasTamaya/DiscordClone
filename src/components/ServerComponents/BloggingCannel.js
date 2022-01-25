@@ -2,15 +2,15 @@ import ServersIcons from "./ServersIcons";
 import ServersPannel from "./ServersPannel";
 import Channel from "./Channel";
 
-const AlgorithmsChannel = () => {
+const BloggingChannel = () => {
 
   return (
     <div className="dashboard-server-container">
       <ServersIcons />
       <ServersPannel />
-      <Channel channelTitle="Algorithms"/>
+      <Channel channelTitle="Blogging"/>
     </div>
   );
 };
 
-export default AlgorithmsChannel;
+export default BloggingChannel;

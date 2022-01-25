@@ -1,19 +1,19 @@
 import closeIcon from "../../assets/close_icon.svg";
 import discordLogo from "../../assets/discord_logo_red.svg";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 const ServersPannel = () => {
-  const openServersPannel = () => {
-    document.querySelector(".servers-container").classList.toggle("disable");
-    document.querySelector(".no-channels-selected").classList.toggle("disable");
-  };
+
+  const closeServersPannel = () => {
+    document.querySelector(".servers-container").style.left = "-100%";
+  }
 
   return (
     <div className="servers-container">
       <div className="servers">
         <div className="new-line">
           <h3>newLine</h3>
-          <img src={closeIcon} alt="close icon" />
+          <img src={closeIcon} alt="close icon" onClick={closeServersPannel}/>
         </div>
         <div className="text-channels">
           <i className="fas fa-hashtag"></i>
@@ -27,34 +27,44 @@ const ServersPannel = () => {
 
         <div className="text-channels white">
           <i className="fas fa-hashtag"></i>
-          <Link to="/algorithms" onClick={openServersPannel}>
+          <Link to="/server/algorithms" onClick={closeServersPannel}>
             algorithms
           </Link>
         </div>
 
         <div className="text-channels white">
           <i className="fas fa-hashtag"></i>
-          <p>announcements</p>
+          <Link to="/server/announcements" onClick={closeServersPannel}>
+            announcements
+          </Link>
         </div>
 
         <div className="text-channels white">
           <i className="fas fa-hashtag"></i>
-          <p>blogging</p>
+          <Link to="/server/blogging" onClick={closeServersPannel}>
+            blogging
+          </Link>
         </div>
 
         <div className="text-channels">
           <i className="fas fa-hashtag"></i>
-          <p>collaborators</p>
+          <Link to="/server/collaborators" onClick={closeServersPannel}>
+            collaborators
+          </Link>
         </div>
 
         <div className="text-channels">
           <i className="fas fa-hashtag"></i>
-          <p>course-ideas</p>
+          <Link to="/server/course-ideas" onClick={closeServersPannel}>
+            course-ideas
+          </Link>
         </div>
 
         <div className="text-channels white">
           <i className="fas fa-hashtag"></i>
-          <p>machine-learning</p>
+          <Link to="/server/machine-learning" onClick={closeServersPannel}> 
+            machine learning
+          </Link>
         </div>
       </div>
 
@@ -75,6 +85,7 @@ const ServersPannel = () => {
           <i className="fas fa-cog"></i>
         </div>
       </div>
+      <Outlet />
     </div>
   );
 };

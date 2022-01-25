@@ -8,8 +8,7 @@ import { Link } from "react-router-dom";
 
 const ServersIcons = () => {
   const openServersPannel = () => {
-    document.querySelector(".servers-container").classList.toggle("disable");
-    document.querySelector(".no-channels-selected").classList.toggle("disable");
+    document.querySelector(".servers-container").style.left = "0";
   };
 
   return (
@@ -19,7 +18,7 @@ const ServersIcons = () => {
       <div className="dashboard-icons-container">
         <img src={plus} alt="plus icon" />
       </div>
-      <div className="dashboard-icons-container">
+      <div className="dashboard-icons-container">   
         <img src={compassIcon} alt="compass icon" />
       </div>
       <div className="dashboard-icons-container">

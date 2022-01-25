@@ -8,7 +8,7 @@ const Server = () => {
       <ServersIcons />
       <ServersPannel />
       <div className="no-channels-selected disable">
-          <h1>So channels selected yet</h1>
+        <h1>So channels selected yet</h1>
       </div>
     </div>
   );
