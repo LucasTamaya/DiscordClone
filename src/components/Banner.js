@@ -14,7 +14,7 @@ const Banner = () => {
 
   return (
     <div className="banner">
-      <div className="mobile-banner-left">
+      <div className="banner-left">
         <img src={discordLogoWhite} alt="discord logo" />
         <Link to="/">Discord</Link>
       </div>
@@ -39,7 +39,7 @@ const Banner = () => {
         </nav>
       </div>
 
-      <div className="mobile-banner-right">
+      <div className="banner-right">
         <Link className="to-login-page" to="/login">
           Login
         </Link>

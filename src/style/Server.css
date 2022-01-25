@@ -83,6 +83,19 @@
   width: 50px;
   border-radius: 50%;
   cursor: pointer;
+  position: relative;
+  display: block;
+}
+
+.servers-bottom-left img::after{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #3ba55d;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
 }
 
 .servers-bottom-left p{

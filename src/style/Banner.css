@@ -17,8 +17,8 @@ ul li {
   font-weight: 500;
 }
 
-.mobile-banner-left,
-.mobile-banner-right {
+.banner-left,
+.banner-right {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,11 +27,11 @@ ul li {
   cursor: pointer;
 }
 
-.mobile-banner-left img {
+.banner-left img {
   width: 35px;
 }
 
-.mobile-banner-left a {
+.banner-left a {
   color: white;
 }
 
@@ -112,7 +112,16 @@ ul li {
   background-color: #404eed;
 }
 
-@media screen and (min-width: 1224px) {
+@media screen and (min-width: 801px) {
+
+  :root{
+    font-size: 13px;
+  }
+  .banner-left > img{
+    width: 50px;
+  }
+
+
   #open-menu {
     display: none;
   }
