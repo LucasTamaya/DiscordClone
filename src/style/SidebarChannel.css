@@ -1,0 +1,101 @@
+.sidebar{
+    display: none;
+    flex-direction: column;
+}
+
+.sidebar-top{
+    background-color: #36393f;
+    padding: 20px 20px 20px 10px;
+    display: flex;
+    column-gap: 10px;
+}
+
+.sidebar-top-input{
+    background-color: #292b2f;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+
+.sidebar-top-input > input {
+    all: unset;
+    color: #dcddde;
+    width: 150px;
+}
+
+.sidebar-top-input > i {
+    color: #dcddde;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.sidebar-top > img{
+    width: 25px;
+    cursor: pointer;
+}
+
+.sidebar-bottom{
+    background-color: #2f3136;
+    padding: 20px;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.sidebar-bottom > h3{
+    color: #8e9297;
+    margin-bottom: 15px;
+}
+
+.sidebar-bottom-item{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 8px;
+}
+
+.sidebar-bottom-item > p{
+    color: #8e9297;
+}
+
+.sidebar-bottom-item > i{
+    color: #f2b022;
+}
+
+.discord-icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ed4245;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.discord-icon-container > img{
+    width: 25px;
+}
+
+.discord-icon-container.green{
+    background-color: #3ba55d;
+}
+
+.discord-icon-container.yellow{
+    background-color: #f2b022;
+}
+
+
+/* Tablet screen */
+
+@media screen and (min-width: 801px) {
+    .sidebar{
+        display: flex;
+    }
+}
+
+/* Laptop screen */
+
+@media screen and (min-width: 1224px) {
+    .sidebar{
+        display: flex;
+    }
+}

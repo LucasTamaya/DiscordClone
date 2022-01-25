@@ -1,6 +1,7 @@
 import ServersIcons from "./ServersIcons";
 import ServersPannel from "./ServersPannel";
 import Channel from "./Channel";
+import SidebarChannel from "./SidebarChannel";
 
 const BloggingChannel = () => {
 
@@ -9,6 +10,7 @@ const BloggingChannel = () => {
       <ServersIcons />
       <ServersPannel />
       <Channel channelTitle="Blogging"/>
+      <SidebarChannel />
     </div>
   );
 };

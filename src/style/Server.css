@@ -24,10 +24,6 @@
   height: 100%;
 }
 
-.servers.disable{
-    display: none;
-}
-
 .servers a{
     color: white;
 }
@@ -245,6 +241,12 @@
 }
 
 @media screen and (min-width: 1224px) {
+    .servers-container{
+        max-width: 250px;
+        position: unset;
+        left: unset;
+    }
+
     .wave-to{
         align-self: unset;
     }

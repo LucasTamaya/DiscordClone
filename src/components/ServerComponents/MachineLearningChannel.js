@@ -1,6 +1,7 @@
 import ServersIcons from "./ServersIcons";
 import ServersPannel from "./ServersPannel";
 import Channel from "./Channel";
+import SidebarChannel from "./SidebarChannel";
 
 const MachineLearningChannel = () => {
 
@@ -9,6 +10,7 @@ const MachineLearningChannel = () => {
       <ServersIcons />
       <ServersPannel />
       <Channel channelTitle="Machine-learning"/>
+      <SidebarChannel />
     </div>
   );
 };
