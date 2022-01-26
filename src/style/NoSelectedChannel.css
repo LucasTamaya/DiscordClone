@@ -1,0 +1,29 @@
+.no-selected-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #36393f;
+}
+
+.no-selected-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.no-selected-item > img{
+    width: 300px;
+}
+
+.no-selected-item > p{
+    color: #8e9297;
+}
+
+@media screen and (min-width: 1224px){
+    .no-selected-item > img{
+        width: 500px;
+    }
+}

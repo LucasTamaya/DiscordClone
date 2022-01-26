@@ -10,6 +10,7 @@ const Register = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
+  // Envoit de la data depuis notre frontend vers notre backend
   const handleRegister = (e) => {
     e.preventDefault();
     axios
@@ -25,7 +26,7 @@ const Register = () => {
   return (
     <main className="login-bg">
       <div className="register-container">
-        <Link className="discord-logo-container" to="/">
+        <Link className="discord-logo-container register" to="/">
           <img src={discordLogoWhite} alt="discord logo" />
           <p>Discord</p>
         </Link>

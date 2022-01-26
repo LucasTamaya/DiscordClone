@@ -34,4 +34,11 @@ form a {
         margin-top: 0;
     }
 
+    .discord-logo-container.register{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 40px;
+    }
+
 }
