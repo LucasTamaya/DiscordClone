@@ -57,9 +57,29 @@
   font-size: 1.8rem;
 }
 
-.text-channels.white p {
-  color: white;
+.text-channels a{
+    color: #8e9297;
 }
+
+.text-channels.white a {
+  color: white;
+  position: relative;
+}
+
+.text-channels.white a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: 0.3s ease;
+  }
+
+  .text-channels.white a:hover::after {
+    width: 100%;
+  }
 
 .text-channels.title i {
   font-size: 1.2rem;
@@ -196,11 +216,11 @@
     row-gap: 15px;
 }
 
-.wave-to img{
+.wave-to > img{
     width: 100px;
 }
 
-.wave-to button{
+.wave-to > button{
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -208,6 +228,11 @@
     width: 200px;
     color: white;
     cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.wave-to > button:hover{
+    background-color: #5865f283;
 }
 
 .channel-input{

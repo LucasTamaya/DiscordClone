@@ -3,7 +3,7 @@ import nitroIcon from "../../assets/nitro_icon.svg";
 import plusIcon from "../../assets/plus_icon.svg";
 import friendsIcon from "../../assets/friends.svg";
 
-const ConversationPannel = () => {
+const DashboardSidebar = () => {
   return (
     <div className="conversation-pannel disable">
       <input type="text" placeholder="Find or start a conversation" />
@@ -30,4 +30,4 @@ const ConversationPannel = () => {
   );
 };
 
-export default ConversationPannel;
+export default DashboardSidebar;

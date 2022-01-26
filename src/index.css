@@ -46,3 +46,9 @@ h1{
   font-size: 1.8rem;
   color: white;
 }
+
+@media screen and (min-width: 1224px) {
+  :root{
+    font-size: 12px;
+  }
+}

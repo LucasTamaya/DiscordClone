@@ -51,10 +51,16 @@
     align-items: center;
     column-gap: 10px;
     margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.sidebar-bottom-item:hover > p{
+    color: white;
 }
 
 .sidebar-bottom-item > p{
     color: #8e9297;
+    transition: 0.3s ease;
 }
 
 .sidebar-bottom-item > i{

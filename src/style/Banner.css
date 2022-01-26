@@ -119,10 +119,6 @@ ul li {
 }
 
 @media screen and (min-width: 801px) {
-
-  :root{
-    font-size: 13px;
-  }
   .banner-left > img{
     width: 50px;
   }
@@ -157,7 +153,8 @@ ul li {
     left: 0;
     bottom: 3px;
     width: 0;
-    height: 1px; background-color: white;
+    height: 1px; 
+    background-color: white;
     transition: 0.3s ease;
   }
 

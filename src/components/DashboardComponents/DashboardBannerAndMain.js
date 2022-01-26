@@ -20,9 +20,10 @@ const DashboardBannerAndMain = () => {
           <p>Friends</p>
         </div>
         <p>Online</p>
-        <p>All</p>
-        <p>Pending</p>
-        <p>Blocked</p>
+        <p><span>All</span></p>
+        <p><span>Pending</span></p>
+        <p><span>Blocked</span></p>
+
         <button className="add-friend-btn" onClick={handleClick}>
           Add Friend
         </button>

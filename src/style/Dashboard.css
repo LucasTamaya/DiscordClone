@@ -53,6 +53,7 @@
 .conversation-pannel input {
   background-color: #23272a;
   margin-bottom: 10px;
+  font-size: 1.2rem;
 }
 
 .conversation-pannel-item {
@@ -62,6 +63,7 @@
   column-gap: 10px;
   margin-bottom: 20px;
   padding: 5px;
+  cursor: pointer;
 }
 
 .conversation-pannel-item.friends {
@@ -78,6 +80,11 @@
 
 .conversation-pannel-item p {
   color: #8e9297;
+  transition: 0.3s ease;
+}
+
+.conversation-pannel-item p:hover{
+  color: white;
 }
 
 .image {
@@ -146,6 +153,12 @@
   background-color: #3ba55d;
   color: white;
   transition: 0.2s ease;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.dashboard-banner .add-friend-btn:hover {
+  transform: scale(1.05);
 }
 
 .dashboard-banner .add-friend-btn.active {
@@ -205,28 +218,33 @@
   height: 100%;
 }
 
-.add-friend-input{
+.add-friend-input {
   display: flex;
-  border: 1px solid black;
+  flex-direction: column;
   border-radius: 5px;
 }
 
 .add-friend-input input {
   margin-bottom: 20px;
-  padding: 5px;
-  height:100%;
+  padding: 8px;
+  height: 100%;
   flex-basis: 70%;
   border: none;
-  border-radius: 5px 0 0 5px;
+  border-radius: 5px;
+  font-size: 1.4rem;
 }
 
-.add-friend-btn-container{
+.add-friend-btn-container {
   height: 100%;
   background-color: #51555c7e;
   padding: 7px;
   width: 100%;
   flex-basis: 30%;
-  border-radius: 0 5px 5px 0;
+  border-radius: 5px;
+}
+
+.add-friend-btn-container button{
+  font-size: 1.2rem;
 }
 
 .add-friend-input button {
@@ -238,6 +256,11 @@
   cursor: pointer;
   height: 100%;
   width: 100%;
+  transition: 0.3s ease;
+}
+
+.add-friend-input button:hover{
+  background-color: #5865f283;
 }
 
 /* Version mobile, pas la partie droite */
@@ -277,9 +300,19 @@
   width: 15px;
 }
 
-.banner-friends-container p {
+.dashboard-banner p {
   color: white;
   font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.dashboard-banner p span {
+  color: #8e9297;
+  transition: 0.3s ease;
+}
+
+.dashboard-banner p span:hover {
+  color: white;
 }
 
 /* Laptop screen */
@@ -305,7 +338,7 @@
     display: flex;
   }
 
-  .dashboard-main-left{
+  .dashboard-main-left {
     padding: 20px;
   }
 
@@ -319,10 +352,20 @@
   }
 
   .add-friend-input {
-    display: flex;
+    height: 40px;
+    flex-direction: row;
+    border: 1px solid black;
   }
 
-  .add-friend-input button{
+  .add-friend-input input {
+    border-radius: 5px 0 0 5px;
+  }
+
+  .add-friend-btn-container {
+    border-radius: 0 5px 5px 0;
+  }
+
+  .add-friend-input button {
     padding: 0;
   }
 }

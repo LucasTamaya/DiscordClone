@@ -1,6 +1,6 @@
 import "../style/Dashboard.css";
 import DashboardIcons from "./DashboardComponents/DashboardIcons";
-import ConversationPannel from "./DashboardComponents/ConversationPannel";
+import DashboardSidebar from "./DashboardComponents/DashboardSidebar";
 import DashboardBannerAndMain from "./DashboardComponents/DashboardBannerAndMain";
 
 const Dashboard = () => {
@@ -8,7 +8,7 @@ const Dashboard = () => {
   return (
     <div className="dashboard-container">
       <DashboardIcons />
-      <ConversationPannel />
+      <DashboardSidebar />
       <DashboardBannerAndMain />           
     </div>
   );
