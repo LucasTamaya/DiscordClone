@@ -22,8 +22,12 @@ ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 10px;
+  column-gap: 15px;
   color: white;
+}
+
+.banner-right > i{
+  font-size: 1.5rem;
   cursor: pointer;
 }
 
