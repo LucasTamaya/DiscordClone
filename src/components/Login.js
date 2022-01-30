@@ -16,6 +16,8 @@ const Login = () => {
       })
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
+    setEmail("");
+    setPassword("");
   };
 
   return (
@@ -35,13 +37,20 @@ const Login = () => {
           <form>
             <div>
               <label>EMAIL</label>
-              <input type="email" onChange={(e) => setEmail(e.target.value)} />
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+              />
             </div>
             <div>
               <label>PASSWORD</label>
               <input
-                type="text"
+                type="password"
+                value={password}
                 onChange={(e) => setPassword(e.target.value)}
+                required
               />
             </div>
 

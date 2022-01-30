@@ -4,7 +4,6 @@ import { useState } from "react";
 import discordLogoWhite from "../assets/discord_mini_icon_white.svg";
 const axios = require("axios"); //facilite les requêtes vers nos api
 
-
 const Register = () => {
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
@@ -21,6 +20,9 @@ const Register = () => {
       })
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
+    setEmail("");
+    setUsername("");
+    setPassword("");
   };
 
   return (
@@ -38,15 +40,30 @@ const Register = () => {
         <form>
           <div>
             <label>EMAIL</label>
-            <input type="email" onChange={(e) => setEmail(e.target.value)} />
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
           </div>
           <div>
             <label>USERNAME</label>
-            <input type="text" onChange={(e) => setUsername(e.target.value)} />
+            <input
+              type="text"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              required
+            />
           </div>
           <div>
             <label>PASSWORD</label>
-            <input type="text" onChange={(e) => setPassword(e.target.value)} />
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
           </div>
 
           <button type="submit" className="login-btn" onClick={handleRegister}>

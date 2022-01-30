@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import discordLogo from "../../assets/discord_logo_red.svg";
 import pinIcon from "../../assets/pin_icon.svg";
@@ -41,13 +41,6 @@ const Channel = ({ channelTitle }) => {
     }
   };
 
-  // TEST ////////////////////////////////////////
-  // useEffect(() => {
-  //   console.log("input", input);
-  //   console.log("input type: ", typeof input);
-  //   console.log("messages", messages);
-  // });
-
   return (
     <div className="dashboard-server-container">
       <div className="channel-section">
@@ -69,9 +62,16 @@ const Channel = ({ channelTitle }) => {
           <div className="channel-center">
             {messages.map((message) => (
               <div key={uuidv4()} className="channel-center__item">
-                <img className="channel-center__img" src={discordLogo} alt="discord logo" />
+                <img
+                  className="channel-center__img"
+                  src={discordLogo}
+                  alt="discord logo"
+                />
                 <div className="channel-center__text">
-                  <p className="channel-center__text__user">{user} <span>{new Date().toLocaleDateString(undefined)}</span></p>
+                  <p className="channel-center__text__user">
+                    {user}{" "}
+                    <span>{new Date().toLocaleDateString(undefined)}</span>
+                  </p>
                   <p className="channel-center__text__message">{message}</p>
                 </div>
               </div>
