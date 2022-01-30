@@ -23,9 +23,9 @@ const Header = () => {
           <img src="https://img.icons8.com/pastel-glyph/64/000000/download--v1.png" />
           Download for Mac
         </button>
-        <button className="discord-btn open-browser">
-          <Link to="/dashboard">Open Discord in your browser</Link>
-        </button>
+        <Link to="/dashboard" className="discord-btn open-browser">
+            Open Discord in your browser
+        </Link>
       </div>
 
       <div className="landing-left-icon">
@@ -35,7 +35,6 @@ const Header = () => {
       <div className="landing-right-icon">
         <img src={landingRightIcon} alt="right bg landing icon" />
       </div>
-      
     </header>
   );
 };

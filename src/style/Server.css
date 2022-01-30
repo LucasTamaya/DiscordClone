@@ -24,8 +24,8 @@
   height: 100%;
 }
 
-.servers a{
-    color: white;
+.servers a {
+  color: white;
 }
 
 .new-line {
@@ -57,8 +57,8 @@
   font-size: 1.8rem;
 }
 
-.text-channels a{
-    color: #8e9297;
+.text-channels a {
+  color: #8e9297;
 }
 
 .text-channels.white a {
@@ -67,36 +67,36 @@
 }
 
 .text-channels.white a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 0;
-    height: 1px;
-    background-color: white;
-    transition: 0.3s ease;
-  }
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 1px;
+  background-color: white;
+  transition: 0.3s ease;
+}
 
-  .text-channels.white a:hover::after {
-    width: 100%;
-  }
+.text-channels.white a:hover::after {
+  width: 100%;
+}
 
 .text-channels.title i {
   font-size: 1.2rem;
 }
 
-.servers-bottom{
-    padding: 10px;
-    background-color: #26282b;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.servers-bottom {
+  padding: 10px;
+  background-color: #26282b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.servers-bottom-left{
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
+.servers-bottom-left {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
 }
 
 .servers-bottom-left img {
@@ -107,193 +107,256 @@
   display: block;
 }
 
-.servers-bottom-left img::after{
-    position: absolute;
-    content: "";
-    width: 10px;
-    height: 10px;
-    background-color: #3ba55d;
-    left: 0;
-    bottom: 0;
-    z-index: 100;
+.servers-bottom-left img::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #3ba55d;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
 }
 
-.servers-bottom-left p{
-    color:#8e9297 ;
+.servers-bottom-left p {
+  color: #8e9297;
 }
 
-.servers-bottom-left p span{
-    color: white;
+.servers-bottom-left p span {
+  color: white;
 }
 
-.servers-bottom-right{
-    display: flex;
-    column-gap: 20px;
+.servers-bottom-right {
+  display: flex;
+  column-gap: 20px;
 }
 
-.servers-bottom-right i{
-    color: #8e9297;
-    font-size: 2rem;
-    cursor: pointer;
+.servers-bottom-right i {
+  color: #8e9297;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
-.channel-section-container.disable{
-    display: none;
+.channel-section-container.disable {
+  display: none;
 }
 
-.no-channels-selected{
-    background-color: #4f545c;
-    width: 100%;
-    height: 100%;
+.no-channels-selected {
+  background-color: #4f545c;
+  width: 100%;
+  height: 100%;
 }
 
-.channel-section{
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    background-color: #36393f;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
- } 
-
-.channel-section.disable{
-    display: none;
+.channel-section {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: #36393f;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
 }
 
-.channel-top{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+.channel-section.disable {
+  display: none;
 }
 
-.channel-top-left{
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
+.channel-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.channel-top-left {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
 }
 
 .channel-top-left i {
-    color: #8e9297;
-    font-size: 1.8rem;
-    line-height: 0;
+  color: #8e9297;
+  font-size: 1.8rem;
+  line-height: 0;
 }
 
-.channel-top-left h2{
+.channel-top-left h2 {
+  color: white;
+}
+
+.channel-top-right {
+  display: flex;
+  align-items: center;
+  color: #8e9297;
+  column-gap: 10px;
+}
+
+.channel-top-right i {
+  font-size: 1.5rem;
+  display: block;
+  cursor: pointer;
+}
+
+.channel-top-right img {
+  width: 25px;
+  cursor: pointer;
+}
+
+.channel-center {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.channel-center__item {
+  display: flex;
+  column-gap: 10px;
+  align-items: flex-start;
+}
+
+.channel-center__img {
+  width: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  display: block;
+}
+
+.channel-center__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.channel-center__text__user {
+  color: rgb(0, 162, 255);
+}
+
+.channel-center__text__user > span{
+    color: #8e9297;
+    font-size: 0.9rem;
+    margin-left: 15px;
+}
+
+.channel-center__text__message{
     color: white;
 }
 
-.channel-top-right{
-    display: flex;
-    align-items: center;
-    color: #8e9297;
-    column-gap: 10px;
-} 
-
-.channel-top-right i{
-    font-size: 1.5rem;
-    display: block;
-    cursor: pointer;
+.channel-center__user {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
-.channel-top-right img{
-    width: 25px;
-    cursor: pointer;
+.channel-bottom {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
 }
 
-.channel-bottom{
-    display: flex;
-    flex-direction: column;
+.wave-to {
+  align-self: center; /*align-self: unset*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  row-gap: 15px;
 }
 
-.wave-to{
-    align-self: center; /*align-self: unset*/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: fit-content;
-    row-gap: 15px;
+.wave-to > img {
+  width: 100px;
 }
 
-.wave-to > img{
-    width: 100px;
+.wave-to > button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #5865f2;
+  width: 200px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
-.wave-to > button{
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #5865f2;
-    width: 200px;
-    color: white;
-    cursor: pointer;
-    transition: 0.3s ease;
+.wave-to > button:hover {
+  background-color: #5865f283;
 }
 
-.wave-to > button:hover{
-    background-color: #5865f283;
+.channel-input {
+  display: flex;
+  align-items: center;
+  background-color: #434850;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 30px;
 }
 
-.channel-input{
-    display: flex;
-    align-items: center;
-    background-color: #434850;
-    border-radius: 5px;
-    padding: 10px;
-    margin-top: 30px;
+.channel-input-plus-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8e9297;
+  border-radius: 50%;
+  padding: 3px;
+  line-height: 0;
+  margin-right: 10px;
 }
 
-.channel-input-plus-icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #8e9297;
-    border-radius: 50%;
-    padding: 3px;
-    line-height: 0;
-    margin-right: 10px;
+.channel-input-plus-icon i {
+  font-size: 1rem;
+  color: #434850;
 }
 
-.channel-input-plus-icon i{
-    font-size: 1rem;
-    color: #434850;
-    
+.channel-input input {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  padding: 5px;
+  height: unset;
 }
 
-.channel-input input{
-    background-color: transparent;
-    border: none;
-    font-size: 1.2rem;
-    padding: 5px;
-    height: unset;
+.channel-input > button {
+  background-color: #5865f2;
+  color: white;
+  border: none;
+  padding: 7px;
+  width: 80px;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
-.channel-input-img{
-    display: flex;
-    column-gap: 10px;
+.channel-input > button:hover {
+  background-color: #5865f283;
 }
 
-.channel-input-img img{
-    width: 20px;
+.channel-input-img {
+  display: flex;
+  column-gap: 10px;
+}
+
+.channel-input-img img {
+  width: 20px;
 }
 
 @media screen and (min-width: 1224px) {
-    .servers-container{
-        max-width: 250px;
-        position: unset;
-        left: unset;
-    }
+  .servers-container {
+    max-width: 250px;
+    position: unset;
+    left: unset;
+  }
 
-    .wave-to{
-        align-self: unset;
-    }
+  .wave-to {
+    align-self: unset;
+  }
 
-    .wave-to img{
-        width: 150px;
-    }
+  .wave-to img {
+    width: 150px;
+  }
 
-    .wave-to button{
-        width: 250px;
-    }
+  .wave-to button {
+    width: 250px;
+  }
 }

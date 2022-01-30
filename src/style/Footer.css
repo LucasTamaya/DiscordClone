@@ -110,7 +110,7 @@
   color: white;
 }
 
-.footer-sign-up button {
+.footer-sign-up a {
   background-color: #5865f2;
   border: none;
   padding: 10px 15px;
@@ -120,7 +120,7 @@
   transition: 0.3s ease;
 }
 
-.footer-sign-up button:hover{
+.footer-sign-up a:hover{
   transform: scale(1.05);
 }
 

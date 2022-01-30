@@ -64,6 +64,7 @@ button img {
 
 .discord-btn.open-browser {
   background-color: #23272a;
+  color: white;
 }
 
 .discord-btn.open-browser a {
